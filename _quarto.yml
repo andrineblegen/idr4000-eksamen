@@ -1,0 +1,32 @@
+project:
+  type: book
+
+book:
+  title: "IDR4000 Mappeeksamen"
+  author: "407"
+  date: "2023-11-17"
+  chapters:
+    - index.qmd
+    - 01-reliabilitet.qmd
+    - 02-vitenfil.qmd
+    - 03-labreport.qmd
+    - 04-study.qmd
+    - 05-repeated.qmd
+    - references.qmd
+
+bibliography: resources/references.bib
+
+crossref: 
+  fig-title: "Figur"
+  fig-prefix: "Figur"
+  tbl-title: "Tabell"
+  tbl-prefix: "Tabell"
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

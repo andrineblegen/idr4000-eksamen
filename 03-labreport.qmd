@@ -1,0 +1,110 @@
+# Labrapport
+
+
+```{r}
+#| include: false
+
+library(tidyverse)
+library(gt)
+library(readxl)
+
+library(broom)
+library(ggplot2)
+
+library(ggtext)
+
+poolsample1 <- read_excel("data/03-labreport/poolsample1.xlsx")
+poolsample2 <- read_excel("data/03-labreport/poolsample2.xlsx")
+mhc <- read_excel("data/03-labreport/mhc1.xlsx")
+cv <- read_excel("data/03-labreport/mhc1.xlsx")
+
+
+
+```
+
+## Introduksjon
+
+Analyser av genuttrykk gjennom fluorisens-basert sanntids kvantitativ polymerase kjedereaksjon (qPCR) er fast praksis i mange medisinske treningsstudier [@kuangOverviewTechnicalConsiderations2018]. qPCR benyttes til å måle uttrykket av et målgen i prøver fra blant annet blod og muskelvev. Et vanlig bruksområde innenfor treningsfysiologi er for eksempel å måle treningsinduserte endringer i genutrykk for ulike muskelfibertyper. Selv om denne typen analyse er svært utbredt, finnes det mange ulike protokoller og måter å gjennomføre analysen på. Reproduserbarheten og reliabiliteten til dataen avhenger i stor grad av hvordan eksperimentene gjennomføres og tolkes. For å sikre så reliable tester som mulig, er det viktig med en detaljert og nøye protokoll [@kuangOverviewTechnicalConsiderations2018].
+
+Prinsippet bak en qPCR-analyse er å følge PCR i sanntid. For å gjennomføre PCR må vi først ekstrahere RNA fra en biologisk celleprøve. Deretter blir RNAet gjort om til cDNA i en prosesses kalt reversert transkripsjon. Med PCR blir dette cDNAet deretter amplifisert opp til milliarder av kopier [@kuangOverviewTechnicalConsiderations2018]. Hver syklus i en PCR er består av tre steg for å kopiere opp det aktuelle DNAet. I første steg (denaturering) blir DNAet utsatt for høy temperatur for å dele DNAet fra dobbeltrådet til enkelttrådet. I det andre steget (annealing) blir temperaturen senket og primere fester seg til templat-trådene. I det siste steget (elongering) øker temperaturen igjen og DNA-polymeraser fester seg til primerne og syntetiserer et nytt dobbelttrådet DNA, likt det vi startet med [@kuangOverviewTechnicalConsiderations2018]. Deretter vil denne syklusen repetere seg, slik at DNAet dobles ekspontensielt for hver syklus. I en qPCR som benytter SYBR green-metoden blir det aktuelle DNAet bundet til fluorosens under hver syklus slik at man kan følge PCR-prosessen i sanntid, ved å ta et bilde som detekterer fluorescensen etter hver syklus [@kuangOverviewTechnicalConsiderations2018]. Mengden cDNA og fluorescens dobles etter hver syklus, og signalet av fluorescens øker dermed eksponentielt. Hvor raskt signalet av fluorescens når en satt grense kalt syklisk terskel (CT), bedømmer hvor sort uttrykk av et gen vi har. Jo færre sykluser som må gjennomføres for å nå CT, jo større uttrykk av målgenet hadde vi i celleprøven vår [@livakAnalysisRelativeGene2001a].
+
+## Metode
+
+I forkant av forsøket hadde labansvarlig forberedt cDNA. qPCR-analyse ble gjort ved bruk av cDNA og en Master mix. Master mixen besto av 5μl Cybr-green, 1μl primer mix (MCH1, MHC2a, MCH2x eller MCHb2m) og 2μl H~2~O. På en plate med brønner ble det tilført 8μl Master mix i brønnene sammen med 2μl cDNA. I tillegg til dette lagde vi en fortynningsserie for å teste primerne. Fortynningene vi brukte var 1/1, 1/10, 1/100, 1/1000, 1/10000, 1/100000 og 1/1000000. I 1/1 prøven var det 2μl cDNA og 8μl cmyc. Fortynningsserien tok utgangspunkt i denne prøven og ble fortynnet med H~2~O. Platen ble så dekket med plast og sentrifiugert på 1200rpm i 1 minutt. PCR-prøvene ble analysert ved sanntids PCR (Applied Biosystems 7500 fast Real-TimePCR Systems, Life Technologies AS) og ved bruk av Quant Studio programvare (Applied Biosystems, Waltham, MA USA). PCR-prosessen besto av tre deler, en "Hold stage" en "PCR stage" og en "Melt curve stage". Det første steget gikk ut på at temperaturen økte med 1,99**°**C/s opp til 50**°**C hvor temperaturen forble konstant i 2 min. Videre Økte temperaturen med 1,99**°**C/s opp til 95**°**C hvor temperaturen forble konstant i 2 min. Deretter startet selve PCR-prosessen som besto av 40 sykluser. Én syklus besto av 1 sek på 95**°**C før temperaturen sank med 1,77**°**C/s ned til 60**°**C hvor temperaturen ble holdt konstant i 30 sek. Etter hver syklus ble det tatt bilde av brønnenes fluorescens. Avslutningsvis økte temperaturen med 1,99**°**C/s opp til 95**°**C hvor temperaturen holdes konstant i 15 sek. Deretter synker temperaturen med 1,77**°**C/s ned til 60**°**C hvor temperaturen holdes konstant i 1 min. Temperaturen økte deretter med 0,15**°**C/s opp til 95**°**C hvor temperaturen ble holdt konstant i 15 sek. Etter PCR-prosessen var ferdig kunne vi hente ut resultatene i form av CT-verdier.
+
+## Resultat
+
+Vi ser at mengden genuttrykk for de ulike muskelfibertypene har endret seg fra uke 0 til uke 2 @tbl-prosent. Genuttrykket for Muskelfibertype 1 (MCH1) har sunket fra 35-27%, muskelfibertype 2a (MHC2a) har økt fra 0,6-72% og muskelfibertype 2x (MHX2x) har sunket fra 63-4%.
+
+```{r}
+#| echo: false
+#| warning: false
+
+
+mhc = read_excel("data/03-labreport/mhc1.xlsx")%>%
+    select(18,19,20) %>% 
+drop_na("...18")
+
+
+  
+  
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: "tbl-prosent"
+#| tbl-cap: "Prosentvis fordeling av genuttrykk etter uke 0 og uke 2"
+
+
+gt(mhc)%>%
+    
+  cols_label(...18 = "Gentype", 
+             ...19 = "Uke 0",
+             ...20 = "Uke 2") %>%
+  fmt_number(columns = ...19:...20, decimals = 2)
+
+  
+
+
+```
+
+Antall sykluser for å nå syklisk terksel (CT) har endret seg fra uke 0 til uke 2 @tbl-ct. Antall sykluser har sunket for MCH1 fra 22-17 sykluser. For MHC2a har antall sykluser sunket 27-15 sykluser, og for MCH2x har antall sykluser til CT økt fra 21-23 sykluser. Lavere antall sykluser viser til større genuttrykk.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: "tbl-ct"
+#| tbl-cap: "CT-verdier"
+
+
+ct = read_excel("data/03-labreport/mhc1.xlsx")%>%
+    select(27,28,29) %>% 
+  drop_na("...27")
+  
+
+ 
+  gt(ct)%>%
+    cols_label(...27 = "Gentype", 
+             ...28 = "Uke 0",
+             ...29 = "Uke 2") %>%
+  fmt_number(columns = ...28:...29, decimals = 2) %>% 
+      tab_footnote (footnote = "Tallene er antall sykluser før syklisk terskel er nådd")
+
+```
+
+## Diskusjon
+
+Ved bruk av fluorisens-basert sanntids kvantitativ polymerase kjedereaksjon (qPCR) er det essensielt med både egnede gener og en detaljert protokoll. Målet med undersøkelsen var å kunne vurdere, presentere og tolke genuttrykk. I denne oppgaven valgte vi å undrsøke endringen i mengden genuttrykk av MHC1, MHC2a og MHC2x før trening og etter 2 uker med styrketrening.
+
+Vi har undersøkt antall sykluser som trengs for å nå CT for de bestemte genene, der færre sykluser indikerer et større genuttrykk. Genutrykket for MCH2x var det som trengte flest sykluser for å nå CT ved uke 2, mens for både MCH1 Og MCH2a har antall sykluser til CT sunket. Dette tyder på at genuttrykket til MCH1 og MHC2a har økt mens MHC2x har sunket.
+
+Den reduserte mengden genuttrykk for MCH1 og MHC2x og den økte mengden genuttrykk av MHC2a virker å være fornuftige. Tabell 1 i @terzis2007 viser blant annet at etter 14 uker med styrketrening har prosentandelen av muskelfibertype 2a økt. @andersen2000 viser også at styrektrening reduserer muskelfibertype MCH2x og øker MHC2a. Dette ser ut til å stemme over ens med våre resultater som vises i tabell 1.
+
+Endringen i genuttrykk av MHC2a og MHC2x er stor. Dette kan tyde på at vi analyserte en prøve fra en veldig utrent person. Siden vi på forhånd ikke fikk noe informasjon om forsøkspersonen vi analyserte prøven fra, blir dette likevel vanskelig å fastslå. I @andersen2000 beskrives det at ved å øke muskelaktiviteten, enten gjennom styrke- eller utholdenhetstrening, slås MHC2x-genet av noe som resulterer i en forhøyet andel MHC2a-gen. Dette stemmer godt med våre observasjoner. Ved inaktivitet reverseres denne prosessen, noe som gjør forekomsten av MHC2x mer vanlig hos inaktive mennekser.
+
+## Konklusjon
+
+Denne analysen av genuttrykk for ulike myosin tungkjeder indikerer at styrketrening bidrar til endringer som et forhøyet uttrykk av MHC2a i forhold til MHC1 og MHC2x.
+
+\newpage

@@ -1,0 +1,7 @@
+# Forord {.unnumbered}
+
+Dette er mappeeksamen i IDR4000.
+
+Hver del er produsert av meg eller som gruppearbeid.
+
+Link til repository på github <https://github.com/andrineblegen/idr4000-eksamen.git>
