@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -181,8 +200,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduksjon" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="introduksjon"><span class="header-section-number">3.1</span> Introduksjon</h2>
-<p>Analyser av genuttrykk gjennom fluorisens-basert sanntids kvantitativ polymerase kjedereaksjon (qPCR) er fast praksis i mange medisinske treningsstudier <span class="citation" data-cites="kuangOverviewTechnicalConsiderations2018">(<a href="references.html#ref-kuangOverviewTechnicalConsiderations2018" role="doc-biblioref"><strong>kuangOverviewTechnicalConsiderations2018?</strong></a>)</span>. qPCR benyttes til å måle uttrykket av et målgen i prøver fra blant annet blod og muskelvev. Et vanlig bruksområde innenfor treningsfysiologi er for eksempel å måle treningsinduserte endringer i genutrykk for ulike muskelfibertyper. Selv om denne typen analyse er svært utbredt, finnes det mange ulike protokoller og måter å gjennomføre analysen på. Reproduserbarheten og reliabiliteten til dataen avhenger i stor grad av hvordan eksperimentene gjennomføres og tolkes. For å sikre så reliable tester som mulig, er det viktig med en detaljert og nøye protokoll <span class="citation" data-cites="kuangOverviewTechnicalConsiderations2018">(<a href="references.html#ref-kuangOverviewTechnicalConsiderations2018" role="doc-biblioref"><strong>kuangOverviewTechnicalConsiderations2018?</strong></a>)</span>.</p>
-<p>Prinsippet bak en qPCR-analyse er å følge PCR i sanntid. For å gjennomføre PCR må vi først ekstrahere RNA fra en biologisk celleprøve. Deretter blir RNAet gjort om til cDNA i en prosesses kalt reversert transkripsjon. Med PCR blir dette cDNAet deretter amplifisert opp til milliarder av kopier <span class="citation" data-cites="kuangOverviewTechnicalConsiderations2018">(<a href="references.html#ref-kuangOverviewTechnicalConsiderations2018" role="doc-biblioref"><strong>kuangOverviewTechnicalConsiderations2018?</strong></a>)</span>. Hver syklus i en PCR er består av tre steg for å kopiere opp det aktuelle DNAet. I første steg (denaturering) blir DNAet utsatt for høy temperatur for å dele DNAet fra dobbeltrådet til enkelttrådet. I det andre steget (annealing) blir temperaturen senket og primere fester seg til templat-trådene. I det siste steget (elongering) øker temperaturen igjen og DNA-polymeraser fester seg til primerne og syntetiserer et nytt dobbelttrådet DNA, likt det vi startet med <span class="citation" data-cites="kuangOverviewTechnicalConsiderations2018">(<a href="references.html#ref-kuangOverviewTechnicalConsiderations2018" role="doc-biblioref"><strong>kuangOverviewTechnicalConsiderations2018?</strong></a>)</span>. Deretter vil denne syklusen repetere seg, slik at DNAet dobles ekspontensielt for hver syklus. I en qPCR som benytter SYBR green-metoden blir det aktuelle DNAet bundet til fluorosens under hver syklus slik at man kan følge PCR-prosessen i sanntid, ved å ta et bilde som detekterer fluorescensen etter hver syklus <span class="citation" data-cites="kuangOverviewTechnicalConsiderations2018">(<a href="references.html#ref-kuangOverviewTechnicalConsiderations2018" role="doc-biblioref"><strong>kuangOverviewTechnicalConsiderations2018?</strong></a>)</span>. Mengden cDNA og fluorescens dobles etter hver syklus, og signalet av fluorescens øker dermed eksponentielt. Hvor raskt signalet av fluorescens når en satt grense kalt syklisk terskel (CT), bedømmer hvor sort uttrykk av et gen vi har. Jo færre sykluser som må gjennomføres for å nå CT, jo større uttrykk av målgenet hadde vi i celleprøven vår <span class="citation" data-cites="livakAnalysisRelativeGene2001a">(<a href="references.html#ref-livakAnalysisRelativeGene2001a" role="doc-biblioref"><strong>livakAnalysisRelativeGene2001a?</strong></a>)</span>.</p>
+<p>Analyser av genuttrykk gjennom fluorisens-basert sanntids kvantitativ polymerase kjedereaksjon (qPCR) er fast praksis i mange medisinske treningsstudier <span class="citation" data-cites="kuang2018">(<a href="references.html#ref-kuang2018" role="doc-biblioref">Kuang et al. 2018</a>)</span> . qPCR benyttes til å måle uttrykket av et målgen i prøver fra blant annet blod og muskelvev. Et vanlig bruksområde innenfor treningsfysiologi er for eksempel å måle treningsinduserte endringer i genutrykk for ulike muskelfibertyper. Selv om denne typen analyse er svært utbredt, finnes det mange ulike protokoller og måter å gjennomføre analysen på. Reproduserbarheten og reliabiliteten til dataen avhenger i stor grad av hvordan eksperimentene gjennomføres og tolkes. For å sikre så reliable tester som mulig, er det viktig med en detaljert og nøye protokoll <span class="citation" data-cites="kuang2018">(<a href="references.html#ref-kuang2018" role="doc-biblioref">Kuang et al. 2018</a>)</span>.</p>
+<p>Prinsippet bak en qPCR-analyse er å følge PCR i sanntid. For å gjennomføre PCR må vi først ekstrahere RNA fra en biologisk celleprøve. Deretter blir RNAet gjort om til cDNA i en prosesses kalt reversert transkripsjon. Med PCR blir dette cDNAet deretter amplifisert opp til milliarder av kopier <span class="citation" data-cites="kuang2018">(<a href="references.html#ref-kuang2018" role="doc-biblioref">Kuang et al. 2018</a>)</span>. Hver syklus i en PCR er består av tre steg for å kopiere opp det aktuelle DNAet. I første steg (denaturering) blir DNAet utsatt for høy temperatur for å dele DNAet fra dobbeltrådet til enkelttrådet. I det andre steget (annealing) blir temperaturen senket og primere fester seg til templat-trådene. I det siste steget (elongering) øker temperaturen igjen og DNA-polymeraser fester seg til primerne og syntetiserer et nytt dobbelttrådet DNA, likt det vi startet med <span class="citation" data-cites="kuang2018">(<a href="references.html#ref-kuang2018" role="doc-biblioref">Kuang et al. 2018</a>)</span>. Deretter vil denne syklusen repetere seg, slik at DNAet dobles ekspontensielt for hver syklus. I en qPCR som benytter SYBR green-metoden blir det aktuelle DNAet bundet til fluorosens under hver syklus slik at man kan følge PCR-prosessen i sanntid, ved å ta et bilde som detekterer fluorescensen etter hver syklus <span class="citation" data-cites="kuang2018">(<a href="references.html#ref-kuang2018" role="doc-biblioref">Kuang et al. 2018</a>)</span>. Mengden cDNA og fluorescens dobles etter hver syklus, og signalet av fluorescens øker dermed eksponentielt. Hvor raskt signalet av fluorescens når en satt grense kalt syklisk terskel (CT), bedømmer hvor sort uttrykk av et gen vi har. Jo færre sykluser som må gjennomføres for å nå CT, jo større uttrykk av målgenet hadde vi i celleprøven vår <span class="citation" data-cites="livak2001">(<a href="references.html#ref-livak2001" role="doc-biblioref">Livak and Schmittgen 2001</a>)</span>.</p>
 </section>
 <section id="metode" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="metode"><span class="header-section-number">3.2</span> Metode</h2>
@@ -195,23 +214,23 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div id="tbl-prosent" class="anchored">
 
-<div id="rrpblspfpn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rrpblspfpn table {
+<div id="ztmyfalraj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ztmyfalraj table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rrpblspfpn thead, #rrpblspfpn tbody, #rrpblspfpn tfoot, #rrpblspfpn tr, #rrpblspfpn td, #rrpblspfpn th {
+#ztmyfalraj thead, #ztmyfalraj tbody, #ztmyfalraj tfoot, #ztmyfalraj tr, #ztmyfalraj td, #ztmyfalraj th {
   border-style: none;
 }
 
-#rrpblspfpn p {
+#ztmyfalraj p {
   margin: 0;
   padding: 0;
 }
 
-#rrpblspfpn .gt_table {
+#ztmyfalraj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -237,12 +256,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_caption {
+#ztmyfalraj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rrpblspfpn .gt_title {
+#ztmyfalraj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -254,7 +273,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#rrpblspfpn .gt_subtitle {
+#ztmyfalraj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -266,7 +285,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#rrpblspfpn .gt_heading {
+#ztmyfalraj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -278,13 +297,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_bottom_border {
+#ztmyfalraj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_col_headings {
+#ztmyfalraj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -299,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_col_heading {
+#ztmyfalraj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +338,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#rrpblspfpn .gt_column_spanner_outer {
+#ztmyfalraj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -331,15 +350,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#rrpblspfpn .gt_column_spanner_outer:first-child {
+#ztmyfalraj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rrpblspfpn .gt_column_spanner_outer:last-child {
+#ztmyfalraj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rrpblspfpn .gt_column_spanner {
+#ztmyfalraj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -351,11 +370,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#rrpblspfpn .gt_spanner_row {
+#ztmyfalraj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rrpblspfpn .gt_group_heading {
+#ztmyfalraj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -381,7 +400,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#rrpblspfpn .gt_empty_group_heading {
+#ztmyfalraj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -396,15 +415,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#rrpblspfpn .gt_from_md > :first-child {
+#ztmyfalraj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rrpblspfpn .gt_from_md > :last-child {
+#ztmyfalraj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rrpblspfpn .gt_row {
+#ztmyfalraj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -423,7 +442,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#rrpblspfpn .gt_stub {
+#ztmyfalraj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -436,7 +455,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rrpblspfpn .gt_stub_row_group {
+#ztmyfalraj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -450,15 +469,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#rrpblspfpn .gt_row_group_first td {
+#ztmyfalraj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rrpblspfpn .gt_row_group_first th {
+#ztmyfalraj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rrpblspfpn .gt_summary_row {
+#ztmyfalraj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -468,16 +487,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rrpblspfpn .gt_first_summary_row {
+#ztmyfalraj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_first_summary_row.thick {
+#ztmyfalraj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rrpblspfpn .gt_last_summary_row {
+#ztmyfalraj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -487,7 +506,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_grand_summary_row {
+#ztmyfalraj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -497,7 +516,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rrpblspfpn .gt_first_grand_summary_row {
+#ztmyfalraj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -507,7 +526,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_last_grand_summary_row_top {
+#ztmyfalraj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -517,11 +536,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_striped {
+#ztmyfalraj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rrpblspfpn .gt_table_body {
+#ztmyfalraj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -530,7 +549,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_footnotes {
+#ztmyfalraj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -544,7 +563,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_footnote {
+#ztmyfalraj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -553,7 +572,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rrpblspfpn .gt_sourcenotes {
+#ztmyfalraj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -567,7 +586,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#rrpblspfpn .gt_sourcenote {
+#ztmyfalraj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -575,63 +594,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rrpblspfpn .gt_left {
+#ztmyfalraj .gt_left {
   text-align: left;
 }
 
-#rrpblspfpn .gt_center {
+#ztmyfalraj .gt_center {
   text-align: center;
 }
 
-#rrpblspfpn .gt_right {
+#ztmyfalraj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rrpblspfpn .gt_font_normal {
+#ztmyfalraj .gt_font_normal {
   font-weight: normal;
 }
 
-#rrpblspfpn .gt_font_bold {
+#ztmyfalraj .gt_font_bold {
   font-weight: bold;
 }
 
-#rrpblspfpn .gt_font_italic {
+#ztmyfalraj .gt_font_italic {
   font-style: italic;
 }
 
-#rrpblspfpn .gt_super {
+#ztmyfalraj .gt_super {
   font-size: 65%;
 }
 
-#rrpblspfpn .gt_footnote_marks {
+#ztmyfalraj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rrpblspfpn .gt_asterisk {
+#ztmyfalraj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rrpblspfpn .gt_indent_1 {
+#ztmyfalraj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rrpblspfpn .gt_indent_2 {
+#ztmyfalraj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rrpblspfpn .gt_indent_3 {
+#ztmyfalraj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rrpblspfpn .gt_indent_4 {
+#ztmyfalraj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rrpblspfpn .gt_indent_5 {
+#ztmyfalraj .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -667,23 +686,23 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div id="tbl-ct" class="anchored">
 
-<div id="rlznemkxvd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rlznemkxvd table {
+<div id="kjdgghiaxx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kjdgghiaxx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rlznemkxvd thead, #rlznemkxvd tbody, #rlznemkxvd tfoot, #rlznemkxvd tr, #rlznemkxvd td, #rlznemkxvd th {
+#kjdgghiaxx thead, #kjdgghiaxx tbody, #kjdgghiaxx tfoot, #kjdgghiaxx tr, #kjdgghiaxx td, #kjdgghiaxx th {
   border-style: none;
 }
 
-#rlznemkxvd p {
+#kjdgghiaxx p {
   margin: 0;
   padding: 0;
 }
 
-#rlznemkxvd .gt_table {
+#kjdgghiaxx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -709,12 +728,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_caption {
+#kjdgghiaxx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rlznemkxvd .gt_title {
+#kjdgghiaxx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -726,7 +745,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#rlznemkxvd .gt_subtitle {
+#kjdgghiaxx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -738,7 +757,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#rlznemkxvd .gt_heading {
+#kjdgghiaxx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -750,13 +769,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_bottom_border {
+#kjdgghiaxx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_col_headings {
+#kjdgghiaxx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -771,7 +790,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_col_heading {
+#kjdgghiaxx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -791,7 +810,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#rlznemkxvd .gt_column_spanner_outer {
+#kjdgghiaxx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -803,15 +822,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#rlznemkxvd .gt_column_spanner_outer:first-child {
+#kjdgghiaxx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rlznemkxvd .gt_column_spanner_outer:last-child {
+#kjdgghiaxx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rlznemkxvd .gt_column_spanner {
+#kjdgghiaxx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -823,11 +842,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#rlznemkxvd .gt_spanner_row {
+#kjdgghiaxx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rlznemkxvd .gt_group_heading {
+#kjdgghiaxx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -853,7 +872,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#rlznemkxvd .gt_empty_group_heading {
+#kjdgghiaxx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -868,15 +887,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#rlznemkxvd .gt_from_md > :first-child {
+#kjdgghiaxx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rlznemkxvd .gt_from_md > :last-child {
+#kjdgghiaxx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rlznemkxvd .gt_row {
+#kjdgghiaxx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -895,7 +914,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#rlznemkxvd .gt_stub {
+#kjdgghiaxx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -908,7 +927,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rlznemkxvd .gt_stub_row_group {
+#kjdgghiaxx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -922,15 +941,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#rlznemkxvd .gt_row_group_first td {
+#kjdgghiaxx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rlznemkxvd .gt_row_group_first th {
+#kjdgghiaxx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rlznemkxvd .gt_summary_row {
+#kjdgghiaxx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -940,16 +959,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rlznemkxvd .gt_first_summary_row {
+#kjdgghiaxx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_first_summary_row.thick {
+#kjdgghiaxx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rlznemkxvd .gt_last_summary_row {
+#kjdgghiaxx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -959,7 +978,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_grand_summary_row {
+#kjdgghiaxx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -969,7 +988,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rlznemkxvd .gt_first_grand_summary_row {
+#kjdgghiaxx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -979,7 +998,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_last_grand_summary_row_top {
+#kjdgghiaxx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -989,11 +1008,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_striped {
+#kjdgghiaxx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rlznemkxvd .gt_table_body {
+#kjdgghiaxx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1002,7 +1021,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_footnotes {
+#kjdgghiaxx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1016,7 +1035,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_footnote {
+#kjdgghiaxx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1025,7 +1044,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rlznemkxvd .gt_sourcenotes {
+#kjdgghiaxx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1039,7 +1058,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#rlznemkxvd .gt_sourcenote {
+#kjdgghiaxx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1047,63 +1066,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#rlznemkxvd .gt_left {
+#kjdgghiaxx .gt_left {
   text-align: left;
 }
 
-#rlznemkxvd .gt_center {
+#kjdgghiaxx .gt_center {
   text-align: center;
 }
 
-#rlznemkxvd .gt_right {
+#kjdgghiaxx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rlznemkxvd .gt_font_normal {
+#kjdgghiaxx .gt_font_normal {
   font-weight: normal;
 }
 
-#rlznemkxvd .gt_font_bold {
+#kjdgghiaxx .gt_font_bold {
   font-weight: bold;
 }
 
-#rlznemkxvd .gt_font_italic {
+#kjdgghiaxx .gt_font_italic {
   font-style: italic;
 }
 
-#rlznemkxvd .gt_super {
+#kjdgghiaxx .gt_super {
   font-size: 65%;
 }
 
-#rlznemkxvd .gt_footnote_marks {
+#kjdgghiaxx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rlznemkxvd .gt_asterisk {
+#kjdgghiaxx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rlznemkxvd .gt_indent_1 {
+#kjdgghiaxx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rlznemkxvd .gt_indent_2 {
+#kjdgghiaxx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rlznemkxvd .gt_indent_3 {
+#kjdgghiaxx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rlznemkxvd .gt_indent_4 {
+#kjdgghiaxx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rlznemkxvd .gt_indent_5 {
+#kjdgghiaxx .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1143,8 +1162,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="3.4" class="anchored" data-anchor-id="diskusjon"><span class="header-section-number">3.4</span> Diskusjon</h2>
 <p>Ved bruk av fluorisens-basert sanntids kvantitativ polymerase kjedereaksjon (qPCR) er det essensielt med både egnede gener og en detaljert protokoll. Målet med undersøkelsen var å kunne vurdere, presentere og tolke genuttrykk. I denne oppgaven valgte vi å undrsøke endringen i mengden genuttrykk av MHC1, MHC2a og MHC2x før trening og etter 2 uker med styrketrening.</p>
 <p>Vi har undersøkt antall sykluser som trengs for å nå CT for de bestemte genene, der færre sykluser indikerer et større genuttrykk. Genutrykket for MCH2x var det som trengte flest sykluser for å nå CT ved uke 2, mens for både MCH1 Og MCH2a har antall sykluser til CT sunket. Dette tyder på at genuttrykket til MCH1 og MHC2a har økt mens MHC2x har sunket.</p>
-<p>Den reduserte mengden genuttrykk for MCH1 og MHC2x og den økte mengden genuttrykk av MHC2a virker å være fornuftige. Tabell 1 i <span class="citation" data-cites="terzis2007">(<a href="references.html#ref-terzis2007" role="doc-biblioref"><strong>terzis2007?</strong></a>)</span> viser blant annet at etter 14 uker med styrketrening har prosentandelen av muskelfibertype 2a økt. <span class="citation" data-cites="andersen2000">(<a href="references.html#ref-andersen2000" role="doc-biblioref"><strong>andersen2000?</strong></a>)</span> viser også at styrektrening reduserer muskelfibertype MCH2x og øker MHC2a. Dette ser ut til å stemme over ens med våre resultater som vises i tabell 1.</p>
-<p>Endringen i genuttrykk av MHC2a og MHC2x er stor. Dette kan tyde på at vi analyserte en prøve fra en veldig utrent person. Siden vi på forhånd ikke fikk noe informasjon om forsøkspersonen vi analyserte prøven fra, blir dette likevel vanskelig å fastslå. I <span class="citation" data-cites="andersen2000">(<a href="references.html#ref-andersen2000" role="doc-biblioref"><strong>andersen2000?</strong></a>)</span> beskrives det at ved å øke muskelaktiviteten, enten gjennom styrke- eller utholdenhetstrening, slås MHC2x-genet av noe som resulterer i en forhøyet andel MHC2a-gen. Dette stemmer godt med våre observasjoner. Ved inaktivitet reverseres denne prosessen, noe som gjør forekomsten av MHC2x mer vanlig hos inaktive mennekser.</p>
+<p>Den reduserte mengden genuttrykk for MCH1 og MHC2x og den økte mengden genuttrykk av MHC2a virker å være fornuftige. Tabell 1 i <span class="citation" data-cites="terzis2008">Terzis et al. (<a href="references.html#ref-terzis2008" role="doc-biblioref">2008</a>)</span> viser blant annet at etter 14 uker med styrketrening har prosentandelen av muskelfibertype 2a økt. <span class="citation" data-cites="andersen2000">Andersen and Aagaard (<a href="references.html#ref-andersen2000" role="doc-biblioref">2000</a>)</span> viser også at styrektrening reduserer muskelfibertype MCH2x og øker MHC2a. Dette ser ut til å stemme over ens med våre resultater som vises i tabell 1.</p>
+<p>Endringen i genuttrykk av MHC2a og MHC2x er stor. Dette kan tyde på at vi analyserte en prøve fra en veldig utrent person. Siden vi på forhånd ikke fikk noe informasjon om forsøkspersonen vi analyserte prøven fra, blir dette likevel vanskelig å fastslå. I <span class="citation" data-cites="andersen2000">Andersen and Aagaard (<a href="references.html#ref-andersen2000" role="doc-biblioref">2000</a>)</span> beskrives det at ved å øke muskelaktiviteten, enten gjennom styrke- eller utholdenhetstrening, slås MHC2x-genet av noe som resulterer i en forhøyet andel MHC2a-gen. Dette stemmer godt med våre observasjoner. Ved inaktivitet reverseres denne prosessen, noe som gjør forekomsten av MHC2x mer vanlig hos inaktive mennekser.</p>
 </section>
 <section id="konklusjon" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="konklusjon"><span class="header-section-number">3.5</span> Konklusjon</h2>
@@ -1152,6 +1171,20 @@ ul.task-list li input[type="checkbox"] {
 <div style="page-break-after: always;"></div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-andersen2000" class="csl-entry" role="listitem">
+Andersen, Jesper L., and Per Aagaard. 2000. <span>“Myosin Heavy Chain IIX Overshoot in Human Skeletal Muscle.”</span> <em>Muscle &amp; Nerve</em> 23 (7): 1095–1104. <a href="https://doi.org/10.1002/1097-4598(200007)23:7<1095::AID-MUS13>3.0.CO;2-O">https://doi.org/10.1002/1097-4598(200007)23:7&lt;1095::AID-MUS13&gt;3.0.CO;2-O</a>.
+</div>
+<div id="ref-kuang2018" class="csl-entry" role="listitem">
+Kuang, Jujiao, Xu Yan, Amanda J. Genders, Cesare Granata, and David J. Bishop. 2018. <span>“An overview of technical considerations when using quantitative real-time PCR analysis of gene expression in human exercise research.”</span> <em>PloS One</em> 13 (5): e0196438. <a href="https://doi.org/10.1371/journal.pone.0196438">https://doi.org/10.1371/journal.pone.0196438</a>.
+</div>
+<div id="ref-livak2001" class="csl-entry" role="listitem">
+Livak, K. J., and T. D. Schmittgen. 2001. <span>“Analysis of relative gene expression data using real-time quantitative PCR and the 2(-Delta Delta C(T)) Method.”</span> <em>Methods (San Diego, Calif.)</em> 25 (4): 402–8. <a href="https://doi.org/10.1006/meth.2001.1262">https://doi.org/10.1006/meth.2001.1262</a>.
+</div>
+<div id="ref-terzis2008" class="csl-entry" role="listitem">
+Terzis, Gerasimos, Giorgos Georgiadis, Grigoris Stratakos, Ioannis Vogiatzis, Stavros Kavouras, Panagiota Manta, Henrik Mascher, and Eva Blomstrand. 2008. <span>“Resistance Exercise-Induced Increase in Muscle Mass Correlates with p70S6 Kinase Phosphorylation in Human Subjects.”</span> <em>European Journal of Applied Physiology</em> 102 (2): 145–52. <a href="https://doi.org/10.1007/s00421-007-0564-y">https://doi.org/10.1007/s00421-007-0564-y</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

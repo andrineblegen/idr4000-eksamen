@@ -1,6 +1,5 @@
 # Repeated measures
 
-
 ```{r}
 #| label: PACKAGES AND DATA
 #| echo: false
@@ -119,7 +118,6 @@ tt.lean <- with(lean.ttest, t.test(multiple, single, paired = TRUE))
 p.lean <- round(tt.lean$p.value, 3)
 ```
 
-
 ```{r}
 #| label: t-test strength
 #| echo: false
@@ -153,7 +151,6 @@ tt.strength <- with(strength.ttest, t.test(multiple, single, paired = TRUE))
 
 p.strength <- round(tt.strength$p.value, 3)
 ```
-
 
 ```{r}
 #| label: lean.fig

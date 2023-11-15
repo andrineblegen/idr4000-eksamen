@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -182,13 +201,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="introduksjon" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="introduksjon"><span class="header-section-number">1.1</span> Introduksjon</h2>
 <p>Vi gjennomførte to testdager 26.09.2023 og 28.09.2023 i tiden 08:00-16:00. Hensikten med disse to dagene var å gjennomføre fysiologiske tester med høy grad av reliabilitet. Det er flere faktorer som påvirker både validitet og reliabilitet, og det er viktig å ta høyde for dette under fysiologisk testing. Vi gjennomførte testdag 1 og testdag 2 med kun én dag mellom for å sikre at deltakerne var på tilsvarende fysiologisk nivå ved begge testene. Vi tok derfor en rekke forhåndsregler for å sikre så like testforhold som mulig.</p>
-<p>Reliabilitet refererer til reproduserbarheten til en f.eks. en fysiologisk test som gjennomfløres flere ganger i en repetert studie, der bedre reliabilitet indikerer bedre presisjon og måling av endring over tid <span class="citation" data-cites="hopkins2000">(<a href="references.html#ref-hopkins2000" role="doc-biblioref"><strong>hopkins2000?</strong></a>)</span>. Innenfor reliabiltet er det en rekke relevante begreper. Standardavvik (SD) forteller hvor langt unna dataene er fra gjennomsnittet <span class="citation" data-cites="spiegelhalter2020">(<a href="references.html#ref-spiegelhalter2020" role="doc-biblioref"><strong>spiegelhalter2020?</strong></a>)</span>, typical error (TE) beskrives av <span class="citation" data-cites="hopkins2000">(<a href="references.html#ref-hopkins2000" role="doc-biblioref"><strong>hopkins2000?</strong></a>)</span> som variabiliteten hos hver enkelt verdi og tenkes å kunne visualisere feilmarginen av et estimat. For å få nøyaktige måinger som kna sammenliknes er det viktig med presise måleinstrumenter som kalibreres nøye. Det er også faktorer som læringseffekt, motivasjon, restitusjon og ernæringstilstand som kan påvirke resultatene, og det er viktig å ta høyde for dette ved fysiologisk testing. <span class="citation" data-cites="hopkins2000">(<a href="references.html#ref-hopkins2000" role="doc-biblioref"><strong>hopkins2000?</strong></a>)</span> hevder at det kreves om lag 50 deltakere og 3 repeterte målinger for å kunne estimere reliabiliteten. Dette er for å utelukke de overnevnte faktorerne.</p>
+<p>Reliabilitet refererer til reproduserbarheten til en f.eks. en fysiologisk test som gjennomfløres flere ganger i en repetert studie, der bedre reliabilitet indikerer bedre presisjon og måling av endring over tid <span class="citation" data-cites="hopkins2000">(<a href="references.html#ref-hopkins2000" role="doc-biblioref">Hopkins 2000</a>)</span>. Innenfor reliabiltet er det en rekke relevante begreper. Standardavvik (SD) forteller hvor langt unna dataene er fra gjennomsnittet <span class="citation" data-cites="spiegelhalter2020">(<a href="references.html#ref-spiegelhalter2020" role="doc-biblioref">Spiegelhalter 2020</a>)</span>, typical error (TE) beskrives av <span class="citation" data-cites="hopkins2000">Hopkins (<a href="references.html#ref-hopkins2000" role="doc-biblioref">2000</a>)</span> som variabiliteten hos hver enkelt verdi og tenkes å kunne visualisere feilmarginen av et estimat. For å få nøyaktige måinger som kna sammenliknes er det viktig med presise måleinstrumenter som kalibreres nøye. Det er også faktorer som læringseffekt, motivasjon, restitusjon og ernæringstilstand som kan påvirke resultatene, og det er viktig å ta høyde for dette ved fysiologisk testing. <span class="citation" data-cites="hopkins2000">Hopkins (<a href="references.html#ref-hopkins2000" role="doc-biblioref">2000</a>)</span> hevder at det kreves om lag 50 deltakere og 3 repeterte målinger for å kunne estimere reliabiliteten. Dette er for å utelukke de overnevnte faktorerne.</p>
 <p>Kroppens maksimale oksygenopptak (VO<sub>2maks</sub>) gir informasjon om en persons maksimale aerobe kapasitet. Oksygenopptaket bestemmes av både sentrale- og perifere faktorer og kan illustreres ved Flick’s likning: <span class="math display">\[VO_2 = (HR x SV) x (aO_2 – vO_2) \]</span> En VO<sub>2maks</sub>-test går ut på at man måler hvor mange ml oksygen en person evner å ta opp og omsette per minutt. Oksygenkravet øker lineært med belastningen helt til personen når sin maksimale aerobe kapasitet, da vil kurven flate ut eller eventuelt synke. En persons maksimale oksygenopptak kan beskrives både i form av absolutte tall (ml/min) eller som relative tall i forhold til kroppsvekt (ml/kg/min).</p>
 </section>
 <section id="metode" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="metode"><span class="header-section-number">1.2</span> Metode</h2>
 <p>VO<sub>2maks</sub>testen gjennomføres som en trappetrinnstest der motstanden øker med 25W hvert minutt til utmattelse/når RPM &lt; 60. VO<sub>2</sub>målinger registreres hvert 30 sek. Deltakerne startet testen på enten 150W, 200W eller 250W avhengig av fysisk form og erfaring med sykkel. Hvert minutt øker watten med 25 helt til utmattelse. Etter endt test ble informasjon innhentet og plottet i ferdigstilt Excel-dokument. **Praktisk gjennomføring/tiltak for å sikre reliabilitet**</p>
-<p>Selv om en tydelig protokoll er essensielt for å sikre reliable tester på en fysiologilab, er det flere hensyn som må tas underveis. Vi begynte hver test med å kalibrere utstyret slik at det var oppdatert etter forholdene til hver deltaker hver klokketime, for å minimere risikoen for at utstyret skal måle feil <span class="citation" data-cites="australianinstituteofsport2013">(<a href="references.html#ref-australianinstituteofsport2013" role="doc-biblioref"><strong>australianinstituteofsport2013?</strong></a>)</span>. For å sikre lik grad av verbal motivasjon og formulering av instruks, valgte v å bruke samme testleder på hver person <span class="citation" data-cites="halperin2015">(<a href="references.html#ref-halperin2015" role="doc-biblioref"><strong>halperin2015?</strong></a>)</span>. Vi ha også instrukser om at kosthold og søvn skulle være likt før og på testdagen, samt ingen trening mellom testene da detet er faktorer som kan påvirke metabolisme og prestasjon, dette ble dog ikke kontrollert <span class="citation" data-cites="australianinstituteofsport2013">(<a href="references.html#ref-australianinstituteofsport2013" role="doc-biblioref"><strong>australianinstituteofsport2013?</strong></a>)</span>.</p>
+<p>Selv om en tydelig protokoll er essensielt for å sikre reliable tester på en fysiologilab, er det flere hensyn som må tas underveis. Vi begynte hver test med å kalibrere utstyret slik at det var oppdatert etter forholdene til hver deltaker hver klokketime, for å minimere risikoen for at utstyret skal måle feil <span class="citation" data-cites="australianinstituteofsport2013">(<a href="references.html#ref-australianinstituteofsport2013" role="doc-biblioref">Tanner and Gore 2013</a>)</span>. For å sikre lik grad av verbal motivasjon og formulering av instruks, valgte v å bruke samme testleder på hver person <span class="citation" data-cites="halperin2015">(<a href="references.html#ref-halperin2015" role="doc-biblioref">Halperin, Pyne, and Martin 2015</a>)</span>. Vi ha også instrukser om at kosthold og søvn skulle være likt før og på testdagen, samt ingen trening mellom testene da detet er faktorer som kan påvirke metabolisme og prestasjon, dette ble dog ikke kontrollert <span class="citation" data-cites="australianinstituteofsport2013">(<a href="references.html#ref-australianinstituteofsport2013" role="doc-biblioref">Tanner and Gore 2013</a>)</span>.</p>
 </section>
 <section id="resultater" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="resultater"><span class="header-section-number">1.3</span> Resultater</h2>
@@ -197,23 +216,23 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div id="tbl-over" class="anchored">
 
-<div id="wqfiprtcda" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#wqfiprtcda table {
+<div id="dzvguoacpz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dzvguoacpz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wqfiprtcda thead, #wqfiprtcda tbody, #wqfiprtcda tfoot, #wqfiprtcda tr, #wqfiprtcda td, #wqfiprtcda th {
+#dzvguoacpz thead, #dzvguoacpz tbody, #dzvguoacpz tfoot, #dzvguoacpz tr, #dzvguoacpz td, #dzvguoacpz th {
   border-style: none;
 }
 
-#wqfiprtcda p {
+#dzvguoacpz p {
   margin: 0;
   padding: 0;
 }
 
-#wqfiprtcda .gt_table {
+#dzvguoacpz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -239,12 +258,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#wqfiprtcda .gt_caption {
+#dzvguoacpz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wqfiprtcda .gt_title {
+#dzvguoacpz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -256,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#wqfiprtcda .gt_subtitle {
+#dzvguoacpz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -268,7 +287,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#wqfiprtcda .gt_heading {
+#dzvguoacpz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -280,13 +299,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#wqfiprtcda .gt_bottom_border {
+#dzvguoacpz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #5F5F5F;
 }
 
-#wqfiprtcda .gt_col_headings {
+#dzvguoacpz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #5F5F5F;
@@ -301,7 +320,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#wqfiprtcda .gt_col_heading {
+#dzvguoacpz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -321,7 +340,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#wqfiprtcda .gt_column_spanner_outer {
+#dzvguoacpz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -333,15 +352,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#wqfiprtcda .gt_column_spanner_outer:first-child {
+#dzvguoacpz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wqfiprtcda .gt_column_spanner_outer:last-child {
+#dzvguoacpz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wqfiprtcda .gt_column_spanner {
+#dzvguoacpz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #5F5F5F;
@@ -353,11 +372,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#wqfiprtcda .gt_spanner_row {
+#dzvguoacpz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#wqfiprtcda .gt_group_heading {
+#dzvguoacpz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -383,7 +402,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#wqfiprtcda .gt_empty_group_heading {
+#dzvguoacpz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -398,15 +417,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#wqfiprtcda .gt_from_md > :first-child {
+#dzvguoacpz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wqfiprtcda .gt_from_md > :last-child {
+#dzvguoacpz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wqfiprtcda .gt_row {
+#dzvguoacpz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -425,7 +444,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#wqfiprtcda .gt_stub {
+#dzvguoacpz .gt_stub {
   color: #FFFFFF;
   background-color: #5F5F5F;
   font-size: 100%;
@@ -438,7 +457,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#wqfiprtcda .gt_stub_row_group {
+#dzvguoacpz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -452,15 +471,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#wqfiprtcda .gt_row_group_first td {
+#dzvguoacpz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wqfiprtcda .gt_row_group_first th {
+#dzvguoacpz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#wqfiprtcda .gt_summary_row {
+#dzvguoacpz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -470,16 +489,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#wqfiprtcda .gt_first_summary_row {
+#dzvguoacpz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #5F5F5F;
 }
 
-#wqfiprtcda .gt_first_summary_row.thick {
+#dzvguoacpz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wqfiprtcda .gt_last_summary_row {
+#dzvguoacpz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -489,7 +508,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #5F5F5F;
 }
 
-#wqfiprtcda .gt_grand_summary_row {
+#dzvguoacpz .gt_grand_summary_row {
   color: #333333;
   background-color: #D5D5D5;
   text-transform: inherit;
@@ -499,7 +518,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#wqfiprtcda .gt_first_grand_summary_row {
+#dzvguoacpz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -509,7 +528,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #5F5F5F;
 }
 
-#wqfiprtcda .gt_last_grand_summary_row_top {
+#dzvguoacpz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -519,11 +538,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #5F5F5F;
 }
 
-#wqfiprtcda .gt_striped {
+#dzvguoacpz .gt_striped {
   background-color: #F4F4F4;
 }
 
-#wqfiprtcda .gt_table_body {
+#dzvguoacpz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #5F5F5F;
@@ -532,7 +551,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #5F5F5F;
 }
 
-#wqfiprtcda .gt_footnotes {
+#dzvguoacpz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -546,7 +565,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#wqfiprtcda .gt_footnote {
+#dzvguoacpz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -555,7 +574,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#wqfiprtcda .gt_sourcenotes {
+#dzvguoacpz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -569,7 +588,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#wqfiprtcda .gt_sourcenote {
+#dzvguoacpz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -577,63 +596,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#wqfiprtcda .gt_left {
+#dzvguoacpz .gt_left {
   text-align: left;
 }
 
-#wqfiprtcda .gt_center {
+#dzvguoacpz .gt_center {
   text-align: center;
 }
 
-#wqfiprtcda .gt_right {
+#dzvguoacpz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wqfiprtcda .gt_font_normal {
+#dzvguoacpz .gt_font_normal {
   font-weight: normal;
 }
 
-#wqfiprtcda .gt_font_bold {
+#dzvguoacpz .gt_font_bold {
   font-weight: bold;
 }
 
-#wqfiprtcda .gt_font_italic {
+#dzvguoacpz .gt_font_italic {
   font-style: italic;
 }
 
-#wqfiprtcda .gt_super {
+#dzvguoacpz .gt_super {
   font-size: 65%;
 }
 
-#wqfiprtcda .gt_footnote_marks {
+#dzvguoacpz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#wqfiprtcda .gt_asterisk {
+#dzvguoacpz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wqfiprtcda .gt_indent_1 {
+#dzvguoacpz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wqfiprtcda .gt_indent_2 {
+#dzvguoacpz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wqfiprtcda .gt_indent_3 {
+#dzvguoacpz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wqfiprtcda .gt_indent_4 {
+#dzvguoacpz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wqfiprtcda .gt_indent_5 {
+#dzvguoacpz .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -674,31 +693,31 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
 </div>
 </div>
 <p>Formålet med dette prosjektet var å teste reliabiliteten på utvalgte fysiologiske mål mellom T1 og T2. <a href="#fig-test">Figur&nbsp;<span>1.1</span></a> gir en oversikt over resultatet på T1 og T2 for hver ID. Oversikt over aktuelle reliabilitetstall finner man i <a href="#tbl-rel">Tabell&nbsp;<span>1.2</span></a>.</p>
-<p>Standardavvik (SD) kan forklares ved et mål på hvor stor spredningen er i forhold til datapunktenes middelverdi/gjennomsnitt, og definerer hvert enkelt datapunkts avvik fra gjennomsnittet <span class="citation" data-cites="spiegelhalter2020">(<a href="references.html#ref-spiegelhalter2020" role="doc-biblioref"><strong>spiegelhalter2020?</strong></a>)</span>.</p>
-<p>Variasjonskoeffisienten (CV) angir et spredningsmål for verdiene i et datasett. CV utrykker ofte variasjon i forhold til gjennomsnittsverdien og angis i prosent <span class="citation" data-cites="spiegelhalter2020">(<a href="references.html#ref-spiegelhalter2020" role="doc-biblioref"><strong>spiegelhalter2020?</strong></a>)</span>.</p>
-<p>Typical Error (TE) eller standardfeil er variabiliteten hos hver enkelt verdi og tenkes å kunne visualisere feilmarginen av et estimat. Eksempelvis vil en standardfeil kunne forklares gjennom biologiske prosesser som påvirker for eksempel kraftutvikling, som følge av mentale eller fysiske faktorer <span class="citation" data-cites="hopkins2000">(<a href="references.html#ref-hopkins2000" role="doc-biblioref"><strong>hopkins2000?</strong></a>)</span>.</p>
+<p>Standardavvik (SD) kan forklares ved et mål på hvor stor spredningen er i forhold til datapunktenes middelverdi/gjennomsnitt, og definerer hvert enkelt datapunkts avvik fra gjennomsnittet <span class="citation" data-cites="spiegelhalter2020">(<a href="references.html#ref-spiegelhalter2020" role="doc-biblioref">Spiegelhalter 2020</a>)</span>.</p>
+<p>Variasjonskoeffisienten (CV) angir et spredningsmål for verdiene i et datasett. CV utrykker ofte variasjon i forhold til gjennomsnittsverdien og angis i prosent <span class="citation" data-cites="spiegelhalter2020">(<a href="references.html#ref-spiegelhalter2020" role="doc-biblioref">Spiegelhalter 2020</a>)</span>.</p>
+<p>Typical Error (TE) eller standardfeil er variabiliteten hos hver enkelt verdi og tenkes å kunne visualisere feilmarginen av et estimat. Eksempelvis vil en standardfeil kunne forklares gjennom biologiske prosesser som påvirker for eksempel kraftutvikling, som følge av mentale eller fysiske faktorer <span class="citation" data-cites="hopkins2000">(<a href="references.html#ref-hopkins2000" role="doc-biblioref">Hopkins 2000</a>)</span>.</p>
 <p>Limits of agreement (LoA) viser til 1,96 standardavvik fra den gjennomsnittlige differansen mellom T1 og T2. Dette er illustrert i <a href="#fig-bland">Figur&nbsp;<span>1.2</span></a> med et Bland-Altman-Plot.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="tbl-rel" class="anchored">
 
-<div id="tfsamuhlxy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#tfsamuhlxy table {
+<div id="ldmmycdbpx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ldmmycdbpx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#tfsamuhlxy thead, #tfsamuhlxy tbody, #tfsamuhlxy tfoot, #tfsamuhlxy tr, #tfsamuhlxy td, #tfsamuhlxy th {
+#ldmmycdbpx thead, #ldmmycdbpx tbody, #ldmmycdbpx tfoot, #ldmmycdbpx tr, #ldmmycdbpx td, #ldmmycdbpx th {
   border-style: none;
 }
 
-#tfsamuhlxy p {
+#ldmmycdbpx p {
   margin: 0;
   padding: 0;
 }
 
-#tfsamuhlxy .gt_table {
+#ldmmycdbpx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -724,12 +743,12 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-left-color: #D3D3D3;
 }
 
-#tfsamuhlxy .gt_caption {
+#ldmmycdbpx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#tfsamuhlxy .gt_title {
+#ldmmycdbpx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -741,7 +760,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-bottom-width: 0;
 }
 
-#tfsamuhlxy .gt_subtitle {
+#ldmmycdbpx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -753,7 +772,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-top-width: 0;
 }
 
-#tfsamuhlxy .gt_heading {
+#ldmmycdbpx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -765,13 +784,13 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-right-color: #D3D3D3;
 }
 
-#tfsamuhlxy .gt_bottom_border {
+#ldmmycdbpx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #5F5F5F;
 }
 
-#tfsamuhlxy .gt_col_headings {
+#ldmmycdbpx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #5F5F5F;
@@ -786,7 +805,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-right-color: #D3D3D3;
 }
 
-#tfsamuhlxy .gt_col_heading {
+#ldmmycdbpx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -806,7 +825,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   overflow-x: hidden;
 }
 
-#tfsamuhlxy .gt_column_spanner_outer {
+#ldmmycdbpx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -818,15 +837,15 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   padding-right: 4px;
 }
 
-#tfsamuhlxy .gt_column_spanner_outer:first-child {
+#ldmmycdbpx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#tfsamuhlxy .gt_column_spanner_outer:last-child {
+#ldmmycdbpx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#tfsamuhlxy .gt_column_spanner {
+#ldmmycdbpx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #5F5F5F;
@@ -838,11 +857,11 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   width: 100%;
 }
 
-#tfsamuhlxy .gt_spanner_row {
+#ldmmycdbpx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#tfsamuhlxy .gt_group_heading {
+#ldmmycdbpx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -868,7 +887,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   text-align: left;
 }
 
-#tfsamuhlxy .gt_empty_group_heading {
+#ldmmycdbpx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -883,15 +902,15 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   vertical-align: middle;
 }
 
-#tfsamuhlxy .gt_from_md > :first-child {
+#ldmmycdbpx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#tfsamuhlxy .gt_from_md > :last-child {
+#ldmmycdbpx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#tfsamuhlxy .gt_row {
+#ldmmycdbpx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -910,7 +929,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   overflow-x: hidden;
 }
 
-#tfsamuhlxy .gt_stub {
+#ldmmycdbpx .gt_stub {
   color: #FFFFFF;
   background-color: #5F5F5F;
   font-size: 100%;
@@ -923,7 +942,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   padding-right: 5px;
 }
 
-#tfsamuhlxy .gt_stub_row_group {
+#ldmmycdbpx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -937,15 +956,15 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   vertical-align: top;
 }
 
-#tfsamuhlxy .gt_row_group_first td {
+#ldmmycdbpx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#tfsamuhlxy .gt_row_group_first th {
+#ldmmycdbpx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#tfsamuhlxy .gt_summary_row {
+#ldmmycdbpx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -955,16 +974,16 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   padding-right: 5px;
 }
 
-#tfsamuhlxy .gt_first_summary_row {
+#ldmmycdbpx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #5F5F5F;
 }
 
-#tfsamuhlxy .gt_first_summary_row.thick {
+#ldmmycdbpx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#tfsamuhlxy .gt_last_summary_row {
+#ldmmycdbpx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -974,7 +993,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-bottom-color: #5F5F5F;
 }
 
-#tfsamuhlxy .gt_grand_summary_row {
+#ldmmycdbpx .gt_grand_summary_row {
   color: #333333;
   background-color: #D5D5D5;
   text-transform: inherit;
@@ -984,7 +1003,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   padding-right: 5px;
 }
 
-#tfsamuhlxy .gt_first_grand_summary_row {
+#ldmmycdbpx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -994,7 +1013,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-top-color: #5F5F5F;
 }
 
-#tfsamuhlxy .gt_last_grand_summary_row_top {
+#ldmmycdbpx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1004,11 +1023,11 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-bottom-color: #5F5F5F;
 }
 
-#tfsamuhlxy .gt_striped {
+#ldmmycdbpx .gt_striped {
   background-color: #F4F4F4;
 }
 
-#tfsamuhlxy .gt_table_body {
+#ldmmycdbpx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #5F5F5F;
@@ -1017,7 +1036,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-bottom-color: #5F5F5F;
 }
 
-#tfsamuhlxy .gt_footnotes {
+#ldmmycdbpx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1031,7 +1050,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-right-color: #D3D3D3;
 }
 
-#tfsamuhlxy .gt_footnote {
+#ldmmycdbpx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1040,7 +1059,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   padding-right: 5px;
 }
 
-#tfsamuhlxy .gt_sourcenotes {
+#ldmmycdbpx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1054,7 +1073,7 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   border-right-color: #D3D3D3;
 }
 
-#tfsamuhlxy .gt_sourcenote {
+#ldmmycdbpx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1062,63 +1081,63 @@ observasjon (Min), høyeste observasjon (Max), og standardavvik (SD)</p> </capti
   padding-right: 5px;
 }
 
-#tfsamuhlxy .gt_left {
+#ldmmycdbpx .gt_left {
   text-align: left;
 }
 
-#tfsamuhlxy .gt_center {
+#ldmmycdbpx .gt_center {
   text-align: center;
 }
 
-#tfsamuhlxy .gt_right {
+#ldmmycdbpx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#tfsamuhlxy .gt_font_normal {
+#ldmmycdbpx .gt_font_normal {
   font-weight: normal;
 }
 
-#tfsamuhlxy .gt_font_bold {
+#ldmmycdbpx .gt_font_bold {
   font-weight: bold;
 }
 
-#tfsamuhlxy .gt_font_italic {
+#ldmmycdbpx .gt_font_italic {
   font-style: italic;
 }
 
-#tfsamuhlxy .gt_super {
+#ldmmycdbpx .gt_super {
   font-size: 65%;
 }
 
-#tfsamuhlxy .gt_footnote_marks {
+#ldmmycdbpx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#tfsamuhlxy .gt_asterisk {
+#ldmmycdbpx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#tfsamuhlxy .gt_indent_1 {
+#ldmmycdbpx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#tfsamuhlxy .gt_indent_2 {
+#ldmmycdbpx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#tfsamuhlxy .gt_indent_3 {
+#ldmmycdbpx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#tfsamuhlxy .gt_indent_4 {
+#ldmmycdbpx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#tfsamuhlxy .gt_indent_5 {
+#ldmmycdbpx .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -1187,6 +1206,20 @@ variasjonskoeffisient (CV), og limits of agreement (LoA)</p> </caption>
 <div style="page-break-after: always;"></div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-halperin2015" class="csl-entry" role="listitem">
+Halperin, Israel, David B. Pyne, and David T. Martin. 2015. <span>“Threats to Internal Validity in Exercise Science: A Review of Overlooked Confounding Variables.”</span> <em>International Journal of Sports Physiology and Performance</em> 10 (7): 823–29. <a href="https://doi.org/10.1123/ijspp.2014-0566">https://doi.org/10.1123/ijspp.2014-0566</a>.
+</div>
+<div id="ref-hopkins2000" class="csl-entry" role="listitem">
+Hopkins, W. G. 2000. <span>“Measures of reliability in sports medicine and science.”</span> <em>Sports Medicine (Auckland, N.Z.)</em> 30 (1): 1–15. <a href="https://doi.org/10.2165/00007256-200030010-00001">https://doi.org/10.2165/00007256-200030010-00001</a>.
+</div>
+<div id="ref-spiegelhalter2020" class="csl-entry" role="listitem">
+Spiegelhalter, David J. 2020. <em>The art of statistics: learning from data</em>. Published in paperback. A Pelican book. UK USA Canada Ireland Australia India New Zealand South Africa: Pelican, an imprint of Penguin Books.
+</div>
+<div id="ref-australianinstituteofsport2013" class="csl-entry" role="listitem">
+Tanner, Rebecca, and Christopher Gore. 2013. <em>Physiological Tests for Elite Athletes</em>. Champaign, UNITED STATES: Human Kinetics. <a href="http://ebookcentral.proquest.com/lib/hilhmr-ebooks/detail.action?docID=3011947">http://ebookcentral.proquest.com/lib/hilhmr-ebooks/detail.action?docID=3011947</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

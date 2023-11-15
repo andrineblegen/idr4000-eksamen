@@ -1,6 +1,5 @@
 # Reliabilitet
 
-
 ```{r}
 #| include: false
 
@@ -201,5 +200,3 @@ ggplot(bland_altman, aes(x = avg, y = diff)) +
 ```
 
 \newpage
-
-
