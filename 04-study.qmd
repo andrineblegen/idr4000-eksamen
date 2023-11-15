@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Studiedesign
 
 Jeg har valgt å ta for meg et tema som omhandler intervalltrening og det maksimale oksygenopptaket (VO~2maks~). VO~2maks~ kan defineres som kroppens maksimale evne til å ta opp og omsette oksygen, altså den maksimale hastigheten på den aerobe energiomsetningen. Flick's likning illustrerer de bestemmede faktorene for VO~2maks~ som er minuttvolum (MV), arteriell oksygen (aO~2~) og venøs oksygen (vO~2~).

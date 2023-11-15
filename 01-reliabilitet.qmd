@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Reliabilitet
 
 ```{r}
@@ -21,13 +26,13 @@ Kroppens maksimale oksygenopptak (VO~2maks~) gir informasjon om en persons maksi
 
 ## Metode
 
-VO~2maks~testen gjennomføres som en trappetrinnstest der motstanden øker med 25W hvert minutt til utmattelse/når RPM \< 60. VO~2~målinger registreres hvert 30 sek. Deltakerne startet testen på enten 150W, 200W eller 250W avhengig av fysisk form og erfaring med sykkel. Hvert minutt øker watten med 25 helt til utmattelse. Etter endt test ble informasjon innhentet og plottet i ferdigstilt Excel-dokument. \newpage \*\*Praktisk gjennomføring/tiltak for å sikre reliabilitet\*\*
+VO~2maks~testen gjennomføres som en trappetrinnstest der motstanden øker med 25W hvert minutt til utmattelse/når RPM \< 60. VO~2~målinger registreres hvert 30 sek. Deltakerne startet testen på enten 150W, 200W eller 250W avhengig av fysisk form og erfaring med sykkel. Hvert minutt øker watten med 25 helt til utmattelse. Etter endt test ble informasjon innhentet og plottet i ferdigstilt Excel-dokument.
 
 Selv om en tydelig protokoll er essensielt for å sikre reliable tester på en fysiologilab, er det flere hensyn som må tas underveis. Vi begynte hver test med å kalibrere utstyret slik at det var oppdatert etter forholdene til hver deltaker hver klokketime, for å minimere risikoen for at utstyret skal måle feil [@australianinstituteofsport2013]. For å sikre lik grad av verbal motivasjon og formulering av instruks, valgte v å bruke samme testleder på hver person [@halperin2015]. Vi ha også instrukser om at kosthold og søvn skulle være likt før og på testdagen, samt ingen trening mellom testene da detet er faktorer som kan påvirke metabolisme og prestasjon, dette ble dog ikke kontrollert [@australianinstituteofsport2013].
 
 ## Resultater
 
-Etter testdag 1 (T1) fikk vi en oversikt hvilket fysiologisk nivå deltakerne i prosjektet vår på. Vi valgte å undersøke variablene VO~2max~ (ml/min), VO~2max~ (ml/min/kg) og kroppsvekt. Se @tbl-over for oversikt over T1.
+Etter testdag 1 (T1) fikk vi en oversikt hvilket fysiologisk nivå deltakerne i prosjektet vår på. Vi valgte å undersøke variablene VO~2max~ (ml/min), VO~2max~ (ml/min/kg) og kroppsvekt.
 
 ```{r}
 #| echo: false
@@ -71,7 +76,7 @@ summarise(mean = mean(value),
 vo2
 ```
 
-Formålet med dette prosjektet var å teste reliabiliteten på utvalgte fysiologiske mål mellom T1 og T2. @fig-test gir en oversikt over resultatet på T1 og T2 for hver ID. Oversikt over aktuelle reliabilitetstall finner man i @tbl-rel.
+Formålet med dette prosjektet var å teste reliabiliteten på utvalgte fysiologiske mål mellom T1 og T2. Tabell gir en oversikt over resultatet på T1 og T2 for hver ID. Oversikt over aktuelle reliabilitetstall finner man i @tbl-rel.
 
 Standardavvik (SD) kan forklares ved et mål på hvor stor spredningen er i forhold til datapunktenes middelverdi/gjennomsnitt, og definerer hvert enkelt datapunkts avvik fra gjennomsnittet [@spiegelhalter2020].
 

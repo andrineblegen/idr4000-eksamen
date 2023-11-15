@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Labrapport
 
 ```{r}
@@ -33,7 +38,7 @@ I forkant av forsøket hadde labansvarlig forberedt cDNA. qPCR-analyse ble gjort
 
 ## Resultat
 
-Vi ser at mengden genuttrykk for de ulike muskelfibertypene har endret seg fra uke 0 til uke 2 @tbl-prosent. Genuttrykket for Muskelfibertype 1 (MCH1) har sunket fra 35-27%, muskelfibertype 2a (MHC2a) har økt fra 0,6-72% og muskelfibertype 2x (MHX2x) har sunket fra 63-4%.
+Vi ser at mengden genuttrykk for de ulike muskelfibertypene har endret seg fra uke 0 til uke 2. Genuttrykket for Muskelfibertype 1 (MCH1) har sunket fra 35-27%, muskelfibertype 2a (MHC2a) har økt fra 0,6-72% og muskelfibertype 2x (MHX2x) har sunket fra 63-4%.
 
 ```{r}
 #| echo: false
@@ -68,7 +73,7 @@ gt(mhc)%>%
 
 ```
 
-Antall sykluser for å nå syklisk terksel (CT) har endret seg fra uke 0 til uke 2 @tbl-ct. Antall sykluser har sunket for MCH1 fra 22-17 sykluser. For MHC2a har antall sykluser sunket 27-15 sykluser, og for MCH2x har antall sykluser til CT økt fra 21-23 sykluser. Lavere antall sykluser viser til større genuttrykk.
+Antall sykluser for å nå syklisk terksel (CT) har endret seg fra uke 0 til uke 2. Antall sykluser har sunket for MCH1 fra 22-17 sykluser. For MHC2a har antall sykluser sunket 27-15 sykluser, og for MCH2x har antall sykluser til CT økt fra 21-23 sykluser. Lavere antall sykluser viser til større genuttrykk.
 
 ```{r}
 #| echo: false

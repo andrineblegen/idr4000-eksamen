@@ -2,6 +2,6 @@
 
 Dette er mappeeksamen i IDR4000.
 
-Hver del er produsert av meg eller som gruppearbeid.
+Hver del er produsert av meg eller som gruppearbeid i undervisningssammenheng.
 
 Link til repository på github <https://github.com/andrineblegen/idr4000-eksamen.git>
